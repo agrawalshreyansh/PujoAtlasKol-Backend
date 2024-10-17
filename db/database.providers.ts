@@ -2,7 +2,7 @@ import { DataSource } from 'typeorm';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
-
+console.log(process.env.DJANGO_DB_USER)
 export const databaseProviders = [
   {
     provide: 'DATA_SOURCE',
